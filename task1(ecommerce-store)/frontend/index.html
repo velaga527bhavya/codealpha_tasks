@@ -1,0 +1,127 @@
+<!---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>EasyShop</h1>
+
+    <nav>
+        <button onclick="loadProducts('men')">Men</button>
+        <button onclick="loadProducts('women')">Women</button>
+        <button onclick="loadProducts('kids')">Kids</button>
+        <button onclick="loadProducts('latest')">Latest</button>
+        <button onclick="viewCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+
+    <div id="products-container"></div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button onclick="placeOrder()">Place Order</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+    </div>
+<h2><i>Happy Shopping</i></h2>
+    <script defer src="script.js"></script> 
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyShop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>EasyShop</h1>
+
+  <nav>
+    <button onclick="loadProducts('men')">Men</button>
+    <button onclick="loadProducts('women')">Women</button>
+    <button onclick="loadProducts('kids')">Kids</button>
+    <button onclick="loadProducts('latest')">Latest</button>
+    <button onclick="viewCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+    <!-- New Profile button -->
+    <button onclick="openProfileModal()">Profile</button>
+  </nav>
+
+  <!-- New Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      
+      <a href="#products-container" class="hero-button">Shop Now</a>
+    </div>
+  </section>
+
+  <div id="products-container"></div>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <button onclick="placeOrder()">Place Order</button>
+      <button onclick="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+
+  <!-- Order Details Modal -->
+  <div id="order-details-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeOrderDetailsModal()">&times;</span>
+      <h2>Enter Your Details</h2>
+      <form id="order-details-form">
+        <label for="order-name">Name:</label>
+        <input type="text" id="order-name" name="order-name" required />
+
+        <label for="order-phone">Phone Number:</label>
+        <input type="tel" id="order-phone" name="order-phone" required />
+
+        <label for="order-address">Address:</label>
+        <textarea id="order-address" name="order-address" required></textarea>
+
+        <button type="submit">Confirm Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Profile Modal -->
+  <div id="profile-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeProfileModal()">&times;</span>
+      <h2>User Profile</h2>
+      <form id="profile-form">
+        <label for="profile-name">Name:</label>
+        <input type="text" id="profile-name" name="profile-name" required />
+
+        <label for="profile-phone">Phone Number:</label>
+        <input type="tel" id="profile-phone" name="profile-phone" required />
+
+        <label for="profile-address">Address:</label>
+        <textarea id="profile-address" name="profile-address" required></textarea>
+
+        <button type="submit">Save Profile</button>
+      </form>
+    </div>
+  </div>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
