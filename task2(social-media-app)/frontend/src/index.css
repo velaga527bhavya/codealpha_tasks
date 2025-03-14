@@ -1,0 +1,438 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  color: #444;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Home Feed Styles */
+.home-feed {
+  margin-top: 20px;
+}
+
+/* New Post Form */
+.new-post-form {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+.new-post-form textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  resize: vertical;
+  font-size: 16px;
+  background: #fff;
+}
+.new-post-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #6a1b9a;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.new-post-form button:hover {
+  background-color: #8e24aa;
+}
+
+/* Post Card Styles */
+.post-card {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.post-header .username {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #6a1b9a;
+}
+.post-content {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post-actions button {
+  padding: 5px 10px;
+  background-color: #ffb74d;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.post-actions button:hover {
+  background-color: #ffa726;
+}
+
+/* Comment Section Styles */
+.comment-section {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+.comment-section .comment {
+  margin-bottom: 8px;
+}
+.comment-section .comment strong {
+  margin-right: 5px;
+  color: #6a1b9a;
+}
+.comment-section input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.comment-section button {
+  padding: 8px 12px;
+  background-color: #66bb6a;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.comment-section button:hover {
+  background-color: #43a047;
+}
+
+/* Profile Page Styles */
+.profile-page {
+  margin-top: 20px;
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  background-color: #f1f3f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #6a1b9a;
+}
+.profile-info h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #6a1b9a;
+}
+.profile-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+.follow-button {
+  padding: 10px 20px;
+  background-color: #6a1b9a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.follow-button:hover {
+  background-color: #8e24aa;
+}
+
+/* Chat Container */
+.chat-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.chat-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #6a1b9a;
+}
+.chat-recipient-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.chat-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.chat-messages {
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+.chat-message {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.chat-message.sent {
+  align-items: flex-end;
+}
+.chat-message.received {
+  align-items: flex-start;
+}
+.chat-message-sender {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #6a1b9a;
+}
+.chat-message-content {
+  background-color: #ffcc80;
+  padding: 8px 12px;
+  border-radius: 16px;
+  max-width: 80%;
+  word-wrap: break-word;
+  color: #555;
+}
+.chat-form {
+  display: flex;
+  gap: 10px;
+}
+.chat-send-button {
+  padding: 10px 20px;
+  background-color: #6a1b9a;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.chat-send-button:hover {
+  background-color: #8e24aa;
+}
+/* Root Variables for Consistent Colors */
+:root {
+  --primary-color: #6a1b9a;
+  --secondary-color: #8e24aa;
+  --background-light: #f8f9fa;
+  --text-color: #444;
+}
+
+/* Common Container */
+.common-container {
+  background: #fff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Profile Styles */
+.profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #fff;
+}
+.profile-info h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+.profile-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Follow Button */
+.follow-button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.follow-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Login & Signup Styles */
+.login-container,
+.signup-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.login-title,
+.signup-title {
+  text-align: center;
+  font-size: 26px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.submit-button:hover {
+  background: var(--secondary-color);
+}
+/* Profile Section Styling */
+.profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-container h1 {
+  font-size: 28px;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.profile-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.profile-container button {
+  padding: 10px 20px;
+  background-color: #6a1b9a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-container button:hover {
+  background-color: #8e24aa;
+}
+
+.profile-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+
+
+
+
